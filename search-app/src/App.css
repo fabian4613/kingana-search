@@ -1,0 +1,153 @@
+/* Fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
+
+/* Estilos generales */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("./assets/images/background.jpg");
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+body,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu a {
+  margin-left: 20px;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+}
+
+/* Barra de búsqueda */
+.search-bar input,
+.search-bar button {
+  padding: 10px;
+  margin: 20px;
+}
+
+/* Encabezado de la sección */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
+}
+
+.logo-complete {
+  color: white;
+}
+
+.logo-complete p {
+  margin-left: 4px;
+}
+
+.logo-big {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+  width: auto;
+}
+
+.row-hero {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.row-hero button {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-weight: 400;
+  color: gray;
+  transition: 1s;
+  padding: 8px 14px 8px;
+  margin: 5px 3px 0px 0px;
+  font-size: 12pt;
+  border-radius: 30px;
+  border: 0px;
+}
+
+.row-hero button:hover {
+  background-color: #f9a825;
+  color: #ffff;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.row-logo-text {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el logo y el texto */
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .menu a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+
+  .row-logo-text {
+    flex-direction: column;
+  }
+
+  .logo-complete p {
+    text-align: center;
+  }
+
+  .logo-big {
+    font-size: 43pt;
+  }
+
+  .row-hero {
+    flex-direction: column;
+  }
+
+  .row-hero button {
+    font-size: 15pt;
+    padding: 8px 10px 8px;
+    margin: 5px 3px 0px 0px;
+  }
+
+  .logo-img {
+    width: 80px;
+  }
+}
