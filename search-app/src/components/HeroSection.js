@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import TengoSuerte from "./TengoSuerte";
 import logo from "../assets/images/logo.svg"; // Suponiendo que tu logo está en la carpeta 'assets'
 
